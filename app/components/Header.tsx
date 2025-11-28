@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Header = () => {
   return (
@@ -7,7 +8,7 @@ const Header = () => {
       <div className="container header-content">
         {/* Logo */}
         <Link href="/" className="logo">
-          <span className="logo-icon">🎮</span>
+          <Image src="/logo.png" alt="GameStore Logo" width={40} height={40} className="logo-img" />
           <span className="logo-text">GAME<span className="highlight">STORE</span></span>
         </Link>
 
