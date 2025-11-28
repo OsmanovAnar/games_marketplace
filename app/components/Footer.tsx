@@ -1,12 +1,16 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="container footer-content">
         <div className="footer-section">
-          <h4 className="footer-title">GAME<span className="highlight">STORE</span></h4>
+          <div className="footer-logo">
+            <Image src="/logo.png" alt="GameStore Logo" width={30} height={30} />
+            <h4 className="footer-title">GAME<span className="highlight">STORE</span></h4>
+          </div>
           <p className="footer-desc">Your ultimate destination for the latest and greatest video games.</p>
         </div>
         
@@ -59,10 +63,17 @@ const Footer = () => {
           margin-bottom: var(--spacing-xl);
         }
 
+        .footer-logo {
+          display: flex;
+          align-items: center;
+          gap: var(--spacing-sm);
+          margin-bottom: var(--spacing-md);
+        }
+
         .footer-title {
           font-size: 1.2rem;
-          margin-bottom: var(--spacing-md);
           color: var(--text-primary);
+          margin-bottom: 0;
         }
 
         .highlight {
