@@ -85,7 +85,7 @@ const DynamicSections = () => {
   ];
 
   return (
-    <div className="container space-y-16 py-12">
+    <div className="container space-y-16 py-12 pb-20">
       {/* Recommendations Section */}
       <section className="space-y-6">
         <div className="flex items-center justify-between">
